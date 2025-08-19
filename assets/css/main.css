@@ -26,7 +26,22 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
+html, body {
+  background-color: #f0ffff !important;
+  height: 100%;
+}
 
+#sidebar,
+#sidebar .inner,
+#sidebar section,
+#sidebar nav,
+#sidebar footer {
+  background-color: transparent !important;
+}
+ 
+.contact, .split.contact, .split.contact section {
+  background-color: transparent !important;
+}
 body {
   line-height: 1; }
 
