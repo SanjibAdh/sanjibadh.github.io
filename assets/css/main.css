@@ -26,6 +26,8 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
+  
+ 
 html, body {
   background-color: #f0ffff !important;
   height: 100%;
@@ -42,6 +44,7 @@ html, body {
 .contact, .split.contact, .split.contact section {
   background-color: transparent !important;
 }
+  
 body {
   line-height: 1; }
 
@@ -190,7 +193,7 @@ h6 {
     line-height: 1.4; }
   h2 {
     font-size: 1.5em; } }
-
+d
 sub {
   font-size: 0.8em;
   position: relative;
@@ -1011,6 +1014,7 @@ header p {
   letter-spacing: 0.075em;
   margin-top: -0.5em;
   text-transform: uppercase; }
+   
 
 header.major > :last-child {
   border-bottom: solid 3px #a80850ed;
@@ -2286,3 +2290,67 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .project-card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .project-card p {
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-card .button {
+      font-size: 0.9rem;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    }
+    #portfolio-projects h2{
+      float: none !important;
+      position: relative !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+      width: max-content !important;
+      margin: 0 0 2rem 0 !important;}
+      #banner {
+        margin-top: -0.125em;  /* keep your existing if you want */
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+      }
+      section#portfolio-projects {
+        margin-top: -0.125em;  /* keep your existing if you want */
+        margin-bottom: 0 !important;
+        padding-top: 0 !important;
+      }
+      .about-label {
+        font-weight: 600;   /* semi-bold */
+        letter-spacing: 0.08em;
+        color: #777;
+      }
